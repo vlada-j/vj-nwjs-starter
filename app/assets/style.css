@@ -1,0 +1,25 @@
+body {
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size:12px;
+    width:100%;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    background: url(header_l.png) repeat-y left top, url(header_r.png) repeat-y right top;
+    background-color: #1CA0DA;
+}
+.app {
+    position:absolute;
+    left:50%;
+    top:50%;
+    width:300px;
+    text-align:center;
+    transform: translateY(-50%) translateX(-50%);
+}
+header {
+    font-size:20px;
+    line-height:35px;
+    color:#F5F5F5;
+    background:#333;
+    text-align:center;
+}

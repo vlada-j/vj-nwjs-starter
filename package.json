@@ -1,0 +1,42 @@
+{
+  "name": "vj-nwjs-starter",
+  "version": "0.0.0",
+  "description": "nw.js starter seed with Phoenix builder",
+  "scripts": {
+    "start": "./node_modules/.bin/run --x86 --mirror https://dl.nwjs.io/ .",
+    "build": "./node_modules/.bin/build --tasks win-x64 --mirror https://dl.nwjs.io/ ."
+  },
+  "main": "./app/index.html",
+  "build": {
+    "nwVersion": "0.27.3",
+    "output": "./dist/",
+    "files": [
+      "./app/*",
+      "./app/**/*",
+      "./node/*",
+      "./node/**/*"
+    ],
+    "appId": "info.vladajanosevic.nwapp",
+    "packed": true,
+    "targets": [
+      "zip",
+      "nsis7z"
+    ],
+    "win": {
+      "productName": "NWJS App",
+      "companyName": "VJ",
+      "copyright": "copyright",
+      "icon": "./app/favicon.ico"
+    },
+    "nsis": {
+      "icon": "./app/favicon.ico",
+      "installDirectory": "$PROGRAMFILES\\${_COMPANYNAME}\\${_APPNAME}",
+      "diffUpdaters": true
+    }
+  },
+  "author": "vladajanosevic@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "nwjs-builder-phoenix": "^1.14.6"
+  }
+}
