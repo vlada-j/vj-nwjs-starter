@@ -1,0 +1,5 @@
+{
+	"dependencies": {
+		"nsis-compat-updater": "^1.1.0"
+	}
+}
