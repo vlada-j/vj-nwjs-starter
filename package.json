@@ -20,7 +20,10 @@
     "appId": "info.vladajanosevic.nwapp",
     "packed": true,
     "node": true,
-    "targets": [],
+    "targets": [
+      "zip",
+      "nsis7z"
+    ],
     "win": {
       "productName": "NWJS App",
       "companyName": "VJ",
